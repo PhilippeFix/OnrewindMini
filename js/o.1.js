@@ -55,13 +55,11 @@ var posPourcent ="";
 var posInVideo = "";
 flyingCurs.addEventListener("click",function(e){
 					vid.currentTime = posInVideo;
-					console.log("SAVEPOS: "+savePos+ "pos% "+posPourcent+ "inVid "+posInVideo);
 					},false);
 var Xleft = btns[3].getBoundingClientRect().left;
 var flying = btns[3].addEventListener("mousemove",function(e){
 					var Xmax = Xleft+465;
 					var cursorPos = 465 - (Xmax - e.clientX);
-					console.log("CLIENTX: "+e.clientX+" POS: "+cursorPos );
 					flyingCurs.style.left = cursorPos+"px";
 					savePos = cursorPos;
 					posPourcent = Math.round((100/465)*savePos);
