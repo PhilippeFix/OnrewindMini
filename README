@@ -1,0 +1,17 @@
+Simple Lecteur Vidéo
+
+Ce projet consiste a utiliser la balise html <video> pour jouer un fichier vidéo et personnaliser quelques contrôles.
+
+Directives:
+
+* Les contrôles natifs de la vidéo doivent être caches.
+* Une barre de progression de lecture personnalise doit être visible, et doit se mettre a jour lors de la lecture.
+* Un bouton play/pause doit pouvoir contrôler la lecture vidéo
+* Javascript Standard (document.querySelector..) ou React (pas de jQuery)
+* Quelques tests unitaires. (mocha.. )
+* code visible sur github
+* Un petit paragraphe décrivant comment tu organiserais le déploiement de ton lecteur (infrastructure, environnement de test, etc..). (3-4 Lignes !)
+* Tout les outils de “bundle” sont autorises: webpack, browserify, bower, npm, gulp..
+* Bonus: Un test “end-2-end” : Vérifier que si je charge la page, le bouton play/pause est visible) (nightwatch.js, etc… )
+
+
