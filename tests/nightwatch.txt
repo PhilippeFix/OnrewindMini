@@ -1,0 +1,25 @@
+#######
+Test nightwatchjs essai 1
+
+#####
+
+
+
+module.exports = {
+  'test Mylecteur' : function (client) {
+    client
+      .url('http://192.168.1.12/onrewind/')
+      .waitForElementVisible('body', 1000)
+      .assert.title('Onrewind')
+      .assert.elementPresent('#play')
+      .assert.elementPresent('#pause')
+      .assert.elementPresent('#stop')
+      .assert.elementPresent('#mute')
+      .assert.visible('#play')
+      .assert.visible('#pause')
+      .assert.visible('#stop')
+      .assert.visible('#mute')
+      .pause(1000)
+      .end();
+  }
+};
